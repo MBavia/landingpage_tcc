@@ -1,4 +1,5 @@
 import React from 'react';
+import { SCHOOL_IMAGE } from '../constants';
 
 const SesiSenai: React.FC = () => {
   return (
@@ -33,11 +34,16 @@ const SesiSenai: React.FC = () => {
 
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 group">
-                {/* Image pointing to local file /sesi.jpg */}
+                {/* Image source now comes from constants.ts for easier GitHub linking */}
                 <img 
-                  src="/sesi.jpg" 
+                  src={SCHOOL_IMAGE} 
                   alt="Escola SESI de Itapeva" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  onError={(e) => {
+                    // Fallback visual if link is broken
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.parentElement?.classList.add('bg-slate-700');
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">

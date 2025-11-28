@@ -1,3 +1,4 @@
+
 export const THERAPIST_SYSTEM_INSTRUCTION = `
 Você é o FEWIT, um assistente terapêutico virtual empático e acolhedor.
 Sua missão é ajudar o usuário a identificar suas emoções e oferecer suporte inicial.
@@ -10,6 +11,13 @@ Diretrizes:
 4. Mantenha respostas concisas (máximo 3 parágrafos).
 5. Se o usuário mencionar autoagressão ou perigo iminente, recomende imediatamente ajuda profissional humana ou ligar para o CVV (188).
 `;
+
+// ==================================================================================
+// ÁREA DE IMAGENS LOCAIS
+// Como os arquivos estão na pasta 'public', usamos apenas a barra '/' seguida do nome.
+// ==================================================================================
+
+export const SCHOOL_IMAGE = '/sesi.jpg';
 
 export const TEAM_MEMBERS = [
   { 
@@ -28,7 +36,7 @@ export const TEAM_MEMBERS = [
     name: 'Matheus', 
     role: 'Tech Lead - Back-end', 
     initials: 'MT'
-    // Sem imagem definida, usará o avatar padrão
+    // Matheus continua sem foto (usará avatar automático)
   },
   { 
     name: 'Douglas', 
