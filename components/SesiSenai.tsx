@@ -36,7 +36,7 @@ const SesiSenai: React.FC = () => {
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 group">
                 {/* Image source now comes from constants.ts for easier GitHub linking */}
                 <img 
-                  src={SCHOOL_IMAGE} 
+                  src={"https://www.jornalcruzeiro.com.br/_midias/jpg/2024/04/23/img_1_230712_e043a5a1_b50f_472c_a301_f282b8349292_g-1310069.jpg"} 
                   alt="Escola SESI de Itapeva" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                   onError={(e) => {
@@ -47,8 +47,8 @@ const SesiSenai: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
-                    <p className="text-white font-bold text-lg">Escola SESI CE 429</p>
-                    <p className="text-white/80 text-sm">Itapeva - SP</p>
+                    <p className="text-white font-bold text-lg">Escola SENAI 404</p>
+                    <p className="text-white/80 text-sm">Sorocaba - SP</p>
                 </div>
               </div>
               

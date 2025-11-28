@@ -29,7 +29,7 @@ const Team: React.FC = () => {
                     <div className="relative mb-4">
                         <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-purple-50 group-hover:border-primary/20 transition-colors">
                             <img 
-                                src={member.image ? member.image : `https://api.dicebear.com/9.x/avataaars/svg?seed=${member.name}&backgroundColor=b6e3f4,c0aede,d1d4f9`} 
+                                src={member.image} 
                                 alt={member.name} 
                                 className="w-full h-full object-cover object-center"
                             />

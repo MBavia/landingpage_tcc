@@ -24,24 +24,25 @@ export const TEAM_MEMBERS = [
     name: 'Manoela', 
     role: 'Desenvolvedora Front-end', 
     initials: 'MA',
-    image: '/manoela.jpg' 
+    image: 'manoela.jpg' 
   },
   { 
     name: 'Antônio', 
     role: 'Desenvolvedor Back-end', 
     initials: 'AN',
-    image: '/antonio.jpg'
+    image: './antonio.jpg'
   },
   { 
     name: 'Matheus', 
     role: 'Tech Lead - Back-end', 
-    initials: 'MT'
+    initials: 'MT',
+    image: './matheus.jpg'
     // Matheus continua sem foto (usará avatar automático)
   },
   { 
     name: 'Douglas', 
     role: 'Scrum Master - Front-end', 
     initials: 'DG',
-    image: '/douglas.jpg'
+    image: '/douglas.png'
   },
 ];
