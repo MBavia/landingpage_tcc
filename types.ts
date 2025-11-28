@@ -16,6 +16,7 @@ export interface TeamMember {
   name: string;
   role: string;
   initials: string;
+  image?: string; // Caminho da foto local (opcional)
 }
 
 export interface WorkflowStep {
