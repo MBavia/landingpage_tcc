@@ -12,8 +12,28 @@ Diretrizes:
 `;
 
 export const TEAM_MEMBERS = [
-  { name: 'Manoela', role: 'Desenvolvedora Front-end', initials: 'MA' },
-  { name: 'Antônio', role: 'Desenvolvedor Back-end', initials: 'AN' },
-  { name: 'Matheus', role: 'Tech Lead - Back-end', initials: 'MT' },
-  { name: 'Douglas', role: 'Scrum Master - Front-end', initials: 'DG' },
+  { 
+    name: 'Manoela', 
+    role: 'Desenvolvedora Front-end', 
+    initials: 'MA',
+    image: '/manoela.jpg' 
+  },
+  { 
+    name: 'Antônio', 
+    role: 'Desenvolvedor Back-end', 
+    initials: 'AN',
+    image: '/antonio.jpg'
+  },
+  { 
+    name: 'Matheus', 
+    role: 'Tech Lead - Back-end', 
+    initials: 'MT'
+    // Sem imagem definida, usará o avatar padrão
+  },
+  { 
+    name: 'Douglas', 
+    role: 'Scrum Master - Front-end', 
+    initials: 'DG',
+    image: '/douglas.jpg'
+  },
 ];

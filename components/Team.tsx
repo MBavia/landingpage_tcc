@@ -25,13 +25,13 @@ const Team: React.FC = () => {
             {TEAM_MEMBERS.map((member, index) => (
                 <div key={index} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col items-center text-center group">
                     
-                    {/* Small Avatar Photo */}
+                    {/* Photo Logic: Uses local image if defined, otherwise uses Dicebear Avatar */}
                     <div className="relative mb-4">
                         <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-purple-50 group-hover:border-primary/20 transition-colors">
                             <img 
-                                src={`https://api.dicebear.com/9.x/avataaars/svg?seed=${member.name}&backgroundColor=b6e3f4,c0aede,d1d4f9`} 
+                                src={member.image ? member.image : `https://api.dicebear.com/9.x/avataaars/svg?seed=${member.name}&backgroundColor=b6e3f4,c0aede,d1d4f9`} 
                                 alt={member.name} 
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover object-center"
                             />
                         </div>
                         <div className="absolute bottom-0 right-0 w-6 h-6 bg-green-400 rounded-full border-2 border-white" title="Online"></div>

@@ -33,15 +33,11 @@ const SesiSenai: React.FC = () => {
 
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 group">
-                {/* Placeholder for School Image - Replacing text location with image as requested */}
+                {/* Image pointing to local file /sesi.jpg */}
                 <img 
-                  src="https://lh3.googleusercontent.com/p/AF1QipN-3pE6PzG5_XyW_FwYyKk_Jj4wz1z1z1z1z1z1=s1360-w1360-h1020" 
+                  src="/sesi.jpg" 
                   alt="Escola SESI de Itapeva" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                  onError={(e) => {
-                    // Fallback if the specific URL fails
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
