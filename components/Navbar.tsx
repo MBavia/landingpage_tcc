@@ -9,11 +9,15 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           
-          {/* Logo Section */}
+          {/* Logo Section - SUBSTITUÍDO O TEXTO PELA TAG DE IMAGEM */}
           <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-            <span className="font-black text-4xl tracking-tighter bg-gradient-to-r from-blue-600 to-pink-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-              FEWIT
-            </span>
+            {/* O nome da imagem é 'Gemini_Generated_Image_d2t4lsd2t4lsd2t4 (2).png', mas vou usar 'fewit-logo.png'
+               para simplificar. Você deve renomear a imagem e colocá-la na pasta 'public/'. */}
+            <img 
+                src="/fewit-logo.png" // Clicar aqui deve mostrar a sua imagem estilizada
+                alt="FEWIT Logo"
+                className="h-16 w-auto" // Altura ajustada para 10 (h-10), ajuste se necessário
+            />
           </div>
           
           <div className="hidden md:flex space-x-10 items-center">

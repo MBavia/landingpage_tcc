@@ -1,6 +1,6 @@
 import React from 'react';
 import { TEAM_MEMBERS } from '../constants';
-import { Github } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react'; // Importação do ícone Linkedin
 
 const Team: React.FC = () => {
     return (
@@ -35,10 +35,31 @@ const Team: React.FC = () => {
                             <h4 className="font-bold text-lg text-gray-900 mb-1">{member.name}</h4>
                             <span className="text-primary text-xs font-bold uppercase tracking-wider mb-3">{member.initials}</span>
                             <p className="text-gray-500 text-sm">{member.role}</p>
-                            <div className="mt-4 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer">
-                                <a href={member.linkedin}><p>Linkedin</p></a>
-                                <Github size={20} />
+                            
+                            {/* Bloco de Ícones de Mídia Social Atualizado */}
+                            <div className="mt-4 flex gap-4 text-gray-500">
+                                {/* LinkedIn Icon */}
+                                <a 
+                                    href={member.linkedin} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="hover:text-primary transition-colors" 
+                                    title={`LinkedIn de ${member.name}`}
+                                >
+                                    <Linkedin size={20} />
+                                </a>
+                                {/* Github Icon */}
+                                <a 
+                                    href={member.github} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="hover:text-primary transition-colors" 
+                                    title={`GitHub de ${member.name}`}
+                                >
+                                    <Github size={20} />
+                                </a>
                             </div>
+                            {/* Fim do Bloco de Ícones de Mídia Social Atualizado */}
 
                         </div>
                     ))}

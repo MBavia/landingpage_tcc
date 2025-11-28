@@ -12,11 +12,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
           
-          <div className="mb-8 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
-            <span className="inline-block px-4 py-1.5 rounded-full border border-purple-200 bg-white/50 backdrop-blur-sm text-primary text-xs font-semibold tracking-widest uppercase mb-6">
-              Saúde Mental & Inteligência Artificial
-            </span>
-          </div>
+    
           
           <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-[0.9] opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
             <span className="text-slate-900 block mb-2">Desvende seus</span>
