@@ -24,25 +24,32 @@ export const TEAM_MEMBERS = [
     name: 'Manoela', 
     role: 'Desenvolvedora Front-end', 
     initials: 'MA',
-    image: 'manoela.jpg' 
+    image: 'manoela.jpg',
+    linkedin: 'https://www.linkedin.com/in/manoela-bavia-37a277380/',
+    github: 'https://github.com/MBavia'
   },
   { 
-    name: 'Antônio', 
+    name: 'Antonio', 
     role: 'Desenvolvedor Back-end', 
     initials: 'AN',
-    image: './antonio.jpg'
+    image: './antonio.jpg',
+    linkedin: 'https://www.linkedin.com/in/antonio-neto-481816331/',
+    github: 'https://github.com/AJACN'
   },
   { 
     name: 'Matheus', 
     role: 'Tech Lead - Back-end', 
     initials: 'MT',
-    image: './matheus.jpg'
-    // Matheus continua sem foto (usará avatar automático)
+    image: './matheus.jpg',
+    linkedin: 'https://www.linkedin.com/in/matheus-wincler-968439315/',
+    github: 'https://github.com/MathWincler'
   },
   { 
     name: 'Douglas', 
     role: 'Scrum Master - Front-end', 
     initials: 'DG',
-    image: '/douglas.png'
+    image: '/douglas.png',
+    linkedin: 'https://www.linkedin.com/in/douglas-willian-bueno-252301305/',
+    github: 'https://github.com/douglasbuenows'
   },
 ];
