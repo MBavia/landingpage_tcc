@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
     
           
           <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-[0.9] opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
-            <span className="text-slate-900 block mb-2">Desvende seus</span>
+            <span className="text-slate-900 block mb-1">Desvende seus</span>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-secondary">
               sentimentos.
             </span>
